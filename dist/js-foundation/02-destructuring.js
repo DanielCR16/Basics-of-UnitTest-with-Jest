@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.characters = void 0;
+//console.log(process);
+console.log(process.env);
+const { SHELL, USERNAME, npm_config_npm_version } = process.env;
+console.log(SHELL);
+console.log(USERNAME);
+console.log(npm_config_npm_version);
+console.table({ npm_config_npm_version, USERNAME });
+exports.characters = ['Flash', 'Batman', 'Superman'];
+const [_, __, superman] = exports.characters;
+console.log(superman);
